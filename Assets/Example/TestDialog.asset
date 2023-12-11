@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6776428311ee74f96b98e9bc544da0a6, type: 3}
+  m_Name: TestDialog
+  m_EditorClassIdentifier: 
+  Dialog:
+    nodes:
+    - Id: 6
+      Position: {x: 2143.5, y: 150.5}
+      Actions:
+      - Replica: "\u041E\u0447\u0435\u043D\u044C \u0436\u0430\u043B\u044C! \u041F\u043E\u0434\u043F\u0438\u0448\u0438\u0441\u044C,
+          \u0431\u0443\u0434\u0435\u0442 \u043F\u043E\u043B\u0435\u0437\u043D\u043E
+          \u0438 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E"
+      Transitions:
+      - TransitionName: ...
+        NodeTranslationId: 5
+        IsAdv: 0
+    - Id: 5
+      Position: {x: 2595.5, y: -230.5}
+      Actions:
+      - Replica: actors.0,1
+      - Replica: speaker.0
+      - Replica: "\u0413\u043E\u0432\u043E\u0440\u044F\u0442 \u043A\u0430\u0436\u0434\u044B\u0439
+          \u0442\u0440\u0435\u0442\u0438\u0439 \u043D\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043D
+          \u043D\u0430 \u043C\u0435\u043D\u044F!"
+      - Replica: "\u042F \u043D\u0430 \u0441\u0432\u043E\u0439 \u043A\u0430\u043D\u0430\u043B
+          \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043D!"
+      - Replica: speaker.1
+      - Replica: "\u042F \u043D\u0430 \u0442\u0435\u0431\u044F \u0442\u043E\u0436\u0435
+          \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043D"
+      - Replica: ...
+      - Replica: action.PlaySomeFX1
+      - Replica: "\u041F\u0440\u0438\u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0439\u0441\u044F!"
+      Transitions: []
+    - Id: 0
+      Position: {x: -558.5, y: -108.5}
+      Actions: []
+      Transitions:
+      - TransitionName: Start
+        NodeTranslationId: 1
+        IsAdv: 0
+    - Id: 1
+      Position: {x: -364.5, y: -108.5}
+      Actions:
+      - Replica: actors.0,1
+      - Replica: speaker.0
+      - Replica: "\u041F\u0440\u0438\u0432\u0435\u0442. \u0425\u043E\u0447\u0435\u0448\u044C
+          \u043D\u0430\u0443\u0447\u0438\u0442\u044C\u0441\u044F \u0434\u0435\u043B\u0430\u0442\u044C
+          \u0438\u0433\u0440\u044B?"
+      - Replica: speaker.1
+      - Replica: "\u0414\u0430\u0430!"
+      - Replica: speaker.0
+      - Replica: "\u0410 \u0442\u044B \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043D
+          \u043D\u0430 \u043C\u043E\u0439 \u044E\u0442\u044E\u0431?"
+      - Replica: speaker.1
+      - Replica: "\u041A\u043E\u043D\u0435\u0447\u043D\u043E!"
+      - Replica: "\u041F\u0440\u043E GPU Instancing \u043A\u0440\u0443\u0442\u043E\u0435
+          \u0432\u0438\u0434\u0435\u043E..."
+      - Replica: ".. \u0433\u0434\u0435 \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0448\u044C,
+          \u043A\u0430\u043A \u043D\u0430 \u0441\u043B\u0430\u0431\u043E\u043C \u043A\u043E\u043C\u043F\u0435
+          \u043E\u0442\u0440\u0435\u043D\u0434\u0435\u0440\u0438\u0442\u044C 10000
+          \u0430\u043D\u0438\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445
+          \u0437\u043E\u043C\u0431\u0438"
+      - Replica: action.PlaySomeFX1
+      - Replica: "\u0418 \u043F\u0440\u043E \u043E\u043F\u044B\u0442 \u043F\u0443\u0431\u043B\u0438\u043A\u0430\u0446\u0438\u0438
+          \u043D\u0430 \u044F\u043D\u0434\u0435\u043A\u0441 \u0438\u0433\u0440\u0430\u0445
+          \u0442\u043E\u0436\u0435 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E!"
+      - Replica: "\u041D\u0443 \u044F \u043F\u043E\u0448\u0435\u043B \u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C
+          \u0442\u0432\u043E\u0438 \u0432\u0438\u0434\u0435\u043E, \u0431\u044B\u0432\u0430\u0439!"
+      - Replica: actors.0
+      - Replica: speaker.0
+      - Replica: "\u041F\u0440\u0438\u0432\u0435\u0442! \u0410 \u0442\u044B \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043D
+          \u043D\u0430 \u044E\u0442\u044E\u0431?"
+      Transitions:
+      - TransitionName: "\u0414\u0430, \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043D!"
+        NodeTranslationId: 2
+        IsAdv: 0
+      - TransitionName: "\u041D\u0435\u0442"
+        NodeTranslationId: 3
+        IsAdv: 0
+    - Id: 2
+      Position: {x: 361, y: -163}
+      Actions:
+      - Replica: "\u0420\u0430\u0434 \u0441\u043B\u044B\u0448\u0430\u0442\u044C!"
+      Transitions:
+      - TransitionName: ...
+        NodeTranslationId: 4
+        IsAdv: 0
+    - Id: 3
+      Position: {x: 314, y: 150.5}
+      Actions:
+      - Replica: "\u041F\u043E\u0434\u043F\u0438\u0448\u0438\u0441\u044C! \u0411\u0443\u0434\u0435\u043C
+          \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u044C \u0433\u0430\u0439\u043C\u0434\u0435\u0432
+          \u0432\u043C\u0435\u0441\u0442\u0435!"
+      Transitions:
+      - TransitionName: "\u0425\u043E\u0440\u043E\u0448\u043E!"
+        NodeTranslationId: 4
+        IsAdv: 0
+      - TransitionName: "\u041D\u0435\u0442!"
+        NodeTranslationId: 4
+        IsAdv: 0
+    - Id: 4
+      Position: {x: 828, y: -74.5}
+      Actions:
+      - Replica: "\u0410 \u043D\u0430 \u0442\u0435\u043B\u0435\u0433\u0440\u0430\u043C
+          \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043D? \u0422\u0430\u043C \u043C\u043E\u0436\u043D\u043E
+          \u0432\u0441\u0435 \u044D\u0442\u043E \u043E\u0431\u0441\u0443\u0436\u0434\u0430\u0442\u044C,
+          \u043A\u0440\u0435\u0430\u0442\u0438\u0432\u0438\u0442\u044C \u0438\u0434\u0435\u0438
+          \u0434\u043B\u044F \u0438\u0433\u0440, \u0431\u044B\u0442\u044C \u0447\u0430\u0441\u0442\u044C\u044E
+          \u043A\u043E\u043C\u044C\u044E\u043D\u0438\u0442\u0438"
+      Transitions:
+      - TransitionName: "\u041A\u043E\u043D\u0435\u0447\u043D\u043E \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043D!"
+        NodeTranslationId: 5
+        IsAdv: 0
+      - TransitionName: "\u0415\u0449\u0435 \u0447\u0435\u0433\u043E..."
+        NodeTranslationId: 6
+        IsAdv: 0
