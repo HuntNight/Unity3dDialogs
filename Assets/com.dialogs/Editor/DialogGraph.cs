@@ -61,6 +61,7 @@ public class DialogGraph : GraphView
         foreach (var node in _dialogNodes)
         {
             AddElement(node);
+            node.AnimateIn();
             node.RefreshExpandedState();
             node.RefreshPorts();
         }
@@ -81,6 +82,7 @@ public class DialogGraph : GraphView
         var node = CreateNode(nodeData);
         _dialogNodes.Add(node);
         AddElement(node);
+        node.AnimateIn();
     }
 
     private DialogNode CreateNode(DialogSO.DialogNodeData nodeData)

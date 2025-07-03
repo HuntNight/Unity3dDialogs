@@ -1,5 +1,34 @@
-DialogueNode #title {
-    background-color: rgba(29, 115, 57, 0.91);
+.dialog-node {
+    background-color: #353535;
+    border-radius: 4px;
+    border-color: #222;
+    border-width: 1px;
+    border-style: solid;
+    color: #eee;
+    transition-property: transform, opacity, background-color;
+    transition-duration: 200ms;
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.dialog-node.show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.dialog-node:hover {
+    background-color: #444;
+}
+
+.dialog-node #title {
+    background-color: #1b5e20;
+    color: #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.dialog-node Button {
+    margin-top: 2px;
 }
 
 #ChoicePort {
@@ -7,6 +36,7 @@ DialogueNode #title {
     flex-shrink: 1;
     justify-content:flex-start;
 }
+
 #top {
     flex-shrink: 1;
 }
