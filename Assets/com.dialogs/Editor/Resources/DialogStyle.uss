@@ -1,6 +1,23 @@
 GridBackground {
-    --grid-background-color: #282828;
-    --line-color: rgba(193, 196, 192, 0.1);
-    --thick-line-color: rgba(193, 196, 192, 0.1);
-    --spacing: 10;
+    --grid-background-color: #1e1e1e;
+    --line-color: rgba(255, 255, 255, 0.05);
+    --thick-line-color: rgba(255, 255, 255, 0.1);
+    --spacing: 12;
+}
+
+.dialog-toolbar {
+    background-color: #2a2a2a;
+}
+
+.dialog-toolbar-button {
+    color: #eee;
+    font-size: 13px;
+    unity-font-style: bold;
+    margin-right: 4px;
+    transition-property: background-color;
+    transition-duration: 150ms;
+}
+
+.dialog-toolbar-button:hover {
+    background-color: #444;
 }

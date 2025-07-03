@@ -29,6 +29,7 @@ public class DialogEditorWindow : EditorWindow
     private void SetupWindow()
     {
         rootVisualElement.Clear();
+        rootVisualElement.styleSheets.Add(Resources.Load<StyleSheet>("DialogStyle"));
         titleContent = new GUIContent(_dialogSo.name);
         var graph = new DialogGraph();
         graph.StretchToParentSize();
@@ -46,9 +47,14 @@ public class DialogEditorWindow : EditorWindow
     private void CreateToolBar()
     {
         var toolbar = new Toolbar();
+        toolbar.AddToClassList("dialog-toolbar");
 
         foreach (GraphAction graphAction in Enum.GetValues(typeof(GraphAction)))
-            toolbar.Add(new Button(() => ToolBarActionHandler(graphAction)) {text = graphAction.ToString()});
+        {
+            var button = new Button(() => ToolBarActionHandler(graphAction)) { text = graphAction.ToString() };
+            button.AddToClassList("dialog-toolbar-button");
+            toolbar.Add(button);
+        }
 
         rootVisualElement.Add(toolbar);
     }
